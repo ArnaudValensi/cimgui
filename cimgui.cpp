@@ -556,12 +556,16 @@ CIMGUI_API void igTextUnformatted(const char* text,const char* text_end)
 {
     return ImGui::TextUnformatted(text,text_end);
 }
-CIMGUI_API void igText(const char* fmt,...)
+void igTextInternal(const char* fmt,...)
 {
     va_list args;
     va_start(args, fmt);
     ImGui::TextV(fmt,args);
     va_end(args);
+}
+CIMGUI_API void igText(const char* fmt)
+{
+    igTextInternal(fmt);
 }
 CIMGUI_API void igTextV(const char* fmt,va_list args)
 {

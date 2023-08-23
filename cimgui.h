@@ -3308,7 +3308,7 @@ CIMGUI_API ImGuiID igGetID_Str(const char* str_id);
 CIMGUI_API ImGuiID igGetID_StrStr(const char* str_id_begin,const char* str_id_end);
 CIMGUI_API ImGuiID igGetID_Ptr(const void* ptr_id);
 CIMGUI_API void igTextUnformatted(const char* text,const char* text_end);
-CIMGUI_API void igText(const char* fmt,...);
+CIMGUI_API void igText(const char* fmt);
 CIMGUI_API void igTextV(const char* fmt,va_list args);
 CIMGUI_API void igTextColored(const ImVec4 col,const char* fmt,...);
 CIMGUI_API void igTextColoredV(const ImVec4 col,const char* fmt,va_list args);
